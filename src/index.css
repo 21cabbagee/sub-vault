@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .vault-card {
+    background: rgba(10, 17, 36, 0.75);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+  }
+  .vault-glow {
+    box-shadow: 0 0 25px -5px rgba(16, 185, 129, 0.15);
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #030712;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(16, 185, 129, 0.06) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(59, 130, 246, 0.05) 0px, transparent 50%);
+}
